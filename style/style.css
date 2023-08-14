@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #680581;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+}
+header img{
+    width: 7em;
+}
+
+a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    cursor: pointer;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+.fazer-pedido{
+    background-color: #FFF200;
+    color: #680581;
+    padding: .3em 3em;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main{
+    max-width: 100%;
+    position: relative;
+}
+
+main svg{
+    width: 100%;
+    margin-top: -.5em;
+}
+main #sorvete{
+    width: 30em;
+    display: block;
+    margin: 0 auto;
+    margin-top: -16.5em;
+}
+main .fazer-pedido{
+    margin: 0 auto;
+    display: block;
+}
+main h1{
+    color: #680581;
+    font-family: 'Potta One', cursive;
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+.quem-somos{
+    display: flex;
+    max-width: 100%;
+}
+.quem-somos #acai-left{
+    position: absolute;
+    height: 100vh;
+}
+.quem-somos .acai-right{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+}
+#info{
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.quem-somos h2{
+    color: #680581;
+    font-family: 'Potta One', cursive;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+#info img{
+    width: 12em;
+}
+#info p{
+    text-align: center;
+    line-height: 160%;
+    font-size: 20px;
+}
+
+.tamanhos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background-color: #680581;
+    margin-top: -1em;
+    gap: 3em;
+    position: relative;
+    top: -1em;
+    width: 100%;
+}
+
+#tamanhos{
+    margin-top: 2em;
+    width: 100%;
+    position: relative;
+    top:3.7em;
+}
+.tamanhos h2{
+    color: #fff;
+    font-family: 'Potta One', cursive;
+}
+#images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 5em;
+}
+#images img{
+    width: 17em;
+    transition: .5s ease-in-out;
+}
+#images img:hover{
+    transform:scale(1.05);
+}
+#end-tamanhos{
+    width: 100%;
+    margin-top: -7em;
+}
+
+#monte-o-seu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded{
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25), 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    transition: .4s ease-in;
+}
+.rounded:hover{
+    transform: scale(1.03);
+}
+
+.flex-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+#monte-o-seu h3{
+    color: #680581;
+    font-family: 'Potta One', cursive;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 26px;
+}
+#btn-margin{
+    margin: 3em 0;
+}
+#center{
+    margin: 0 auto;
+}
