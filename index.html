@@ -9,15 +9,16 @@
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="logo">
-        <nav>
+        <img id="menu" src="./images/hamburger.png" alt="menu">
+        <img  src="./images/logo.png" alt="logo">
+        <nav id="nav">
             <ul>
-                <a href="#"> <li>Combos</li></a> 
-                <a href="#"><li>Promoções</li></a>
-                <a href="#"><li>Monte seu açaí</li></a>
-                <a href="#"><li>Sobre</li></a>
-                <a href="#"><li>Contato</li></a>
+                <a href="#quem-somos"> <li>Quem Somos</li></a> 
+                <a href="#tamanhos"><li>Tamanhos</li></a>
+                <a href="#monte-o-seu"><li>Monte seu açaí</li></a>
+                <a href="#contato"><li>Contato</li></a>
             </ul>
+            <button id="close">X</button>
         </nav>
         <button class="fazer-pedido">Fazer Pedido</button>
         
@@ -31,20 +32,21 @@
             <h1>Peça Já o Seu Açaí!</h1>
             <button class="fazer-pedido">Fazer Pedido</button>
     </main>
-    <section class="quem-somos">
+
+    <section class="quem-somos" id="quem-somos">
         <img id="acai-left" src="./images/acai-left.png" alt="grão de açaí">
         <div id="info">
             <img  src="./images/logo.png" alt="">
             <h2>Quem Somos</h2>
             <p>Somos uma empresa jovem, moderna, entusiasta e que veio pra ficar. O açaí no Kilo nasceu para proporcionar aos amantes desse irresistível sabor uma experiência totalmente nova naquele momento especial de reunir os amigos e tomar aquele açaí!São mais de 60 acompanhamentos para proporcionar a você, nosso cliente, um sabor único a cada visita. Desde frutas e cremes, passando por mousses e caldas, á Nutella e leite em pó, oferecemos tudo que há de melhor para você montar o seu Açaí.</p>
         </div>
-        <img class="acai-right" src="./images/acai-right.png" alt="grão de açaí">
+        <img id="acai-right" class="acai-right" src="./images/acai-right.png" alt="grão de açaí">
     </section>
     
-    <svg id="tamanhos" width="1512" height="246" viewBox="0 0 1512 246" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="tamanhossvg" width="1512" height="246" viewBox="0 0 1512 246" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L63 16.4C126 32.8 252 65.6 378 82C504 98.4 630 98.4 756 82C882 65.6 1008 32.8 1134 16.4C1260 0 1386 0 1449 0H1512V246H1449C1386 246 1260 246 1134 246C1008 246 882 246 756 246C630 246 504 246 378 246C252 246 126 246 63 246H0V0Z" fill="#680581"/>
         </svg>
-    <section class="tamanhos">
+    <section class="tamanhos" id="tamanhos">
         <h2>Do Tamanho Da Sua Vontade</h2>
         <div id="images">
             <img src="./images/pequeno.png" alt="açaí pequeno">
@@ -61,59 +63,90 @@
             <div class="content">
                 
                 <div id="title">
-                    <img src="./images/montar.png" alt="açaí">
+                    <img id="montar" src="./images/montar.png" alt="açaí">
                 </div>
                 
                 <div class="flex-images">
 
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/morango.jpg" alt="morangos">
-                        <p>Morango</p>
-                    </div>
-
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/leite-em-po.png" alt="leite em pó">
-                        <p>Leite Em Pó</p>
-                    </div>
+                    <div class="container-images-flex">
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/morango.jpg" alt="morangos">
+                            <p>Morango</p>
+                        </div>
     
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/nutella.jpg" alt="nutella">
-                        <p>Nutella</p>
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/leite-em-po.png" alt="leite em pó">
+                            <p>Leite Em Pó</p>
+                        </div>
+        
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/nutella.jpg" alt="nutella">
+                            <p>Nutella</p>
+                        </div>
                     </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/mousse-de-maracuja.jpg" alt="mousse de maracujá">
-                        <p>Mousse de Maracujá</p>
+                    
+                    <div class="container-images-flex">
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/mousse-de-maracuja.jpg" alt="mousse de maracujá">
+                            <p>Mousse de Maracujá</p>
+                        </div>
+        
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/chocolate.jpg" alt="chocolate">
+                            <p>Chocolate</p>
+                        </div>
+        
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/leite-condensado.jpg" alt="leite condensado">
+                            <p>Leite Condensado</p>
+                        </div>
                     </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/chocolate.jpg" alt="chocolate">
-                        <p>Chocolate</p>
+                    
+                    <div class="container-images-flex">
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/manga.png" alt="manga">
+                            <p>Manga</p>
+                        </div>
+        
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/banana.png" alt="banana">
+                            <p>Banana</p>
+                        </div>
+        
+                        <div class="image-flex">
+                            <img lazy="loading" class="rounded" src="./images/mousse-de-morango.jfif" alt="Mousse de morango">
+                            <p>Mousse de morango</p>
+                        </div>
                     </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/leite-condensado.jpg" alt="leite condensado">
-                        <p>Leite Condensado</p>
-                    </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/manga.png" alt="manga">
-                        <p>Manga</p>
-                    </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/banana.png" alt="banana">
-                        <p>Banana</p>
-                    </div>
-    
-                    <div>
-                        <img lazy="loading" class="rounded" src="./images/mousse-de-morango.jfif" alt="Mousse de morango">
-                        <p>Mousse de morango</p>
-                    </div>
+                    
                     
             </div>
             </div>
             <button id="center" id="btn-margin" class="fazer-pedido">Fazer pedido</button>
+
+            <footer id="contato">
+                <div class="left">
+                    <h4>Fale Conosco</h4>
+                    <form>
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" placeholder="Digite seu Nome">
+    
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" type="number" placeholder="(xx) x xxxx-xxxx">
+    
+                        <textarea name="text" id="" cols="30" rows="10"></textarea>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <h4>Onde nos Encontrar</h4>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.116862885805!2d-39.96972797242611!3d-13.528419062122625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x73f7d9d23900989%3A0x7a3c6d3f4153120e!2sR.%20Dom%20Pedro%20II%2C%2046%20-%20Muritiba%2C%20Jaguaquara%20-%20BA%2C%2045345-000!5e0!3m2!1spt-BR!2sbr!4v1692126934704!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p>Horário de Funcionamento: Das 9:00 ás 21:00</p>
+                </div>
+            </footer>
         </section>
+        
 </body>
 </html>
