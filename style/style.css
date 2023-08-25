@@ -86,6 +86,10 @@ main h1{
     margin-bottom: 1em;
 }
 
+svg {
+    width: 100vw;
+}
+
 .quem-somos{
     display: flex;
     max-width: 100%;
