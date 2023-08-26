@@ -66,7 +66,6 @@ main{
 
 main svg{
     width: 100%;
-    margin-top: -.5em;
 }
 main #sorvete{
     width: 30em;
@@ -86,9 +85,7 @@ main h1{
     margin-bottom: 1em;
 }
 
-svg {
-    width: 100vw;
-}
+
 
 .quem-somos{
     display: flex;
@@ -389,6 +386,17 @@ footer .right p{
     iframe{
         width: 100%;
     }
+    #tamanhossvg{
+        position: relative;
+        top: -1em;
+    }
+    #end-tamanhos{
+        position: relative;
+        top: 1em;
+    }
+    #monte-o-seu{
+        margin-top: 2em;
+    }
     .left,.right{
         width: 100%;
     }
@@ -427,8 +435,6 @@ footer .right p{
     #tamanhossvg{
         margin-top: 2em;
         width: 100%;
-        position: relative;
-        top:4.5em;
     }
     #montar{
         width: 18em;
@@ -441,3 +447,4 @@ footer .right p{
         overflow-x: hidden;
     }
 }
+
